@@ -1,0 +1,126 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: black;
+  height:100%;
+  width:100%;
+  color:white;
+  font-size: 10px;
+  }
+
+h1 {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2rem;
+}
+
+.table-container {
+  position:relative;
+  max-height: 70vh;
+  max-width:70vw;
+  width: 70vh;
+  height: 70vw;
+  margin: auto;
+}
+
+.answer-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  opacity: 0.8;
+  height:100%;
+  width:100%;
+  display:none;
+}
+
+#answer {
+  position:absolute;
+  top: 50%;
+  left:50%;
+  font-size: 5rem;
+  text-align: center;
+  font-stretch: expanded;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  text-shadow: 0 0 20px #6666ff, 0 0 20px white;
+}
+
+.form-container {
+  margin: 1rem 0 3rem 0;
+  text-align: center;
+  align-self: center;
+}
+
+.form-container #guessInput {
+  padding: 10px;
+  border: 1px solid #6666ff;
+  box-shadow: 0 0px 4px #6666ff;
+  background-color: black;
+  margin:  1rem;
+  width: 40%;
+  color:white;
+}
+
+.form-container #fireButton {
+  background-color: #6666ff;
+  color:white;
+  cursor:pointer;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border: 1px solid white;
+  width: 50%;
+}
+
+.instruction {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px solid white;
+  font-size: 0.8rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+th i {
+  color: black;
+
+}
+
+th:first-child, .first-row th {
+  border: none;
+  color: white;
+}
+
+.hit i, .miss i {
+  color: white;
+}
+
+.miss {
+  background-color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  th {
+    font-size: 1.5rem;
+  }
+  .form-container {
+    margin-top: 5rem;
+  }
+}
