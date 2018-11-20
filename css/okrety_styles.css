@@ -5,21 +5,13 @@ body {
   width:100%;
   color:white;
   font-size: 10px;
+  position: relative;
   }
 
 h1 {
   text-align: center;
   padding: 2rem 0;
   font-size: 2rem;
-}
-
-.table-container {
-  position:relative;
-  max-height: 70vh;
-  max-width:70vw;
-  width: 70vh;
-  height: 70vw;
-  margin: auto;
 }
 
 .answer-overlay {
@@ -58,7 +50,6 @@ h1 {
   box-shadow: 0 0px 4px #6666ff;
   background-color: black;
   margin:  1rem;
-  width: 40%;
   color:white;
 }
 
@@ -69,7 +60,6 @@ h1 {
   padding: 0.5rem;
   margin-top: 1rem;
   border: 1px solid white;
-  width: 50%;
 }
 
 .instruction {
@@ -78,28 +68,58 @@ h1 {
   padding-top: 1rem;
 }
 
-table {
-  width: 100%;
-  height: 100%;
-  border-collapse: collapse;
+.table-container {
+  position:relative;
+  margin: auto;
 }
 
-th {
+table {
+  width:80%;
+  border-collapse: collapse;
+  margin:auto;
+}
+
+td {
+  width: 12.5%;
+  position: relative;
   border: 1px solid white;
+}
+
+td:first-child, .first-row td {
+  border: none;
+  color: white;
+}
+
+td:after {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+
+td .cell {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   font-size: 0.8rem;
   text-align: center;
   cursor: pointer;
 }
 
-th i {
+td .inside-cell {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+td i {
   color: black;
-
 }
 
-th:first-child, .first-row th {
-  border: none;
-  color: white;
-}
+
 
 .hit i, .miss i {
   color: white;
@@ -117,10 +137,13 @@ th:first-child, .first-row th {
   body {
     font-size: 16px;
   }
-  th {
+  td {
     font-size: 1.5rem;
   }
   .form-container {
     margin-top: 5rem;
+  }
+  table {
+    margin-right: auto;
   }
 }
