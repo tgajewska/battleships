@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\node_modules\\bootstrap",
+    "\\node_modules\\bootstrap\\scss",
+    "\\src"
+  ],
+  "SelectedNode": "\\webpack.prod.config.js",
+  "PreviewInSolutionExplorer": false
+}

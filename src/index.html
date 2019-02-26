@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+  <meta charset="utf-8">
+
+  <title>gra w okrety</title>
+</head>
+
+<body>
+  <div class="answer-overlay"><div id="answer"></div></div>
+  <h1>ZATOP TRZY TRÓJMASZTOWCE</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-7">
+        <div class="table-container">
+          <table class="">
+            <tr class="first-row">
+              <td id="00"><div class="cell"></div></td>
+              <td id="01"><div class="cell"><div class="inside-cell">1</div></div></td>
+              <td id="02"><div class="cell"><div class="inside-cell">2</div></div></td>
+              <td id="03"><div class="cell"><div class="inside-cell">3</div></div></td>
+              <td id="04"><div class="cell"><div class="inside-cell">4</div></div></td>
+              <td id="05"><div class="cell"><div class="inside-cell">5</div></div></td>
+              <td id="06"><div class="cell"><div class="inside-cell">6</div></div></td>
+              <td id="07"><div class="cell"><div class="inside-cell">7</div></div></td>
+            </tr>
+            <tr>
+              <td id="10"><div class="cell"><div class="inside-cell">A</div></div></td>
+              <td id="11"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="12"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="13"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="14"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="15"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="16"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="17"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+            </tr>
+            <tr>
+              <td id="20"><div class="cell"><div class="inside-cell">B</div></div></td>
+              <td id="21"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="22"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="23"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="24"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="25"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="26"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="27"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+            </tr>
+            <tr>
+              <td id="30"><div class="cell"><div class="inside-cell">C</div></div></td>
+              <td id="31"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="32"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="33"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="34"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="35"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="36"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="37"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+
+            </tr>
+            <tr>
+              <td id="40"><div class="cell"><div class="inside-cell">D</div></div></td>
+              <td id="41"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="42"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="43"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="44"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="45"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="46"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="47"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+
+            </tr>
+            <tr>
+              <td id="50"><div class="cell"><div class="inside-cell">E</div></div></td>
+              <td id="51"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="52"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="53"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="54"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="55"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="56"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="57"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+
+            </tr>
+            <tr>
+              <td id="60"><div class="cell"><div class="inside-cell">F</div></div></td>
+              <td id="61"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="62"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="63"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="64"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="65"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="66"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="67"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+
+            </tr>
+
+            <tr>
+              <td id="70"><div class="cell"><div class="inside-cell">G</div></div></td>
+              <td id="71"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="72"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="73"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="74"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="75"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="76"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+              <td id="77"><div class="cell"><div class="inside-cell"><i class="fa fa-ship"></i></div></div></td>
+
+            </tr>
+          </table>
+        </div>
+     
+      </div>
+      <div class="col-12 col-md-5">
+          <div class="form-container">
+        <form>
+          <label>Tutaj strzelaj:</label>
+          <input type="text" id="guessInput" placeholder="A1" autofocus=""/>
+          <button type="button" id="fireButton">Ognia!</button>
+        </form>
+
+      </div>
+      <div class="instruction"></div>
+
+          <div class="user-data-input nondisplay">
+              <form class="form-container" id="userNameForm" novalidate>
+                  <label for="name">Jeśli chcesz zachować swój wynik w rankingu, wpisz swoje imię.</label>
+                  <input type="text" name="name" id="name" class="name-input" pattern="^[a-zA-ZęóąśżźćńŚŻŹĆŃłŁ\s/-]{3,}$" autofocus="" required>
+                  <small id="warning" class="warning"></small>
+                  <button type="submit">Wyślij wynik</button>
+              </form>
+          </div>
+    </div>
+  </div>
+  </div>
+
+
+  
+
+</body>
+</html>
